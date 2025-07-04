@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (quantity > 1) {
                 quantity--;
                 quantitySpan.textContent = quantity;
+                updateCartCount(); // Update cart count on quantity change
             }
         });
 
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let quantity = parseInt(quantitySpan.textContent);
             quantity++;
             quantitySpan.textContent = quantity;
+            updateCartCount(); // Update cart count on quantity change
         });
     });
 
@@ -63,4 +65,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
         showSlide(currentSlide); // Initialize first slide
     }
+
+    // Cart Count functionality
+    const cartCountSpan = document.querySelector('.cart-count');
+
+    function updateCartCount() {
+        // For demonstration, let's assume a simple count based on items in cart.html
+        // In a real app, this would come from a global state or backend.
+        let totalItems = 0;
+        document.querySelectorAll('.cart-item').forEach(item => {
+            const quantitySpan = item.querySelector('.quantity');
+            if (quantitySpan) {
+                totalItems += parseInt(quantitySpan.textContent);
+            }
+        });
+        if (cartCountSpan) {
+            cartCountSpan.textContent = totalItems;
+        }
+    }
+
+    // Initial update of cart count on page load
+    updateCartCount();
+
+    // Add to cart button functionality (for demonstration)
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // In a real application, this would add the product to a cart array/object
+            // and then update the cart count.
+            // For now, let's just increment the cart count by 1 for demonstration.
+            let currentCount = parseInt(cartCountSpan.textContent);
+            cartCountSpan.textContent = currentCount + 1;
+        });
+    });
 });

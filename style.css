@@ -52,6 +52,7 @@ header {
     font-size: 1.8em;
     font-weight: bold;
     color: var(--white);
+    text-decoration: none; /* Remove underline from logo link */
 }
 
 .nav-links {
@@ -78,6 +79,10 @@ header {
     color: var(--primary-color);
 }
 
+.cart-icon {
+    position: relative;
+}
+
 .cart-icon a {
     color: var(--white);
     text-decoration: none;
@@ -88,6 +93,19 @@ header {
 
 .cart-icon a:hover {
     color: var(--primary-color);
+}
+
+.cart-count {
+    background-color: #ff0000; /* Red circle */
+    color: var(--white);
+    font-size: 0.6em;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.3em 0.6em;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    line-height: 1;
 }
 
 main {
