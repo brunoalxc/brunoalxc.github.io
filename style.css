@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Using Arial as a common sans-serif font */
+    font-family: 'Orbitron', sans-serif; /* Changed font to Orbitron */
     margin: 0;
     padding: 0;
     background-color: var(--light-gray);
