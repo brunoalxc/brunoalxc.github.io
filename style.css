@@ -110,16 +110,54 @@ section {
 }
 
 .image-slider {
-    background-color: var(--light-gray);
+    position: relative;
+    width: 100%;
     height: 350px; /* Slightly larger */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--text-color);
-    font-size: 1.5em;
-    border: 1px dashed var(--border-color);
+    overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hide all images by default */
+}
+
+.slider-images img.active {
+    display: block; /* Show active image */
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 1em;
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border: none;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.slider-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .featured-products h2, .product-list h2, .cart-items h2 {
