@@ -38,15 +38,7 @@ header {
     align-items: center;
 }
 
-.menu-btn {
-    background-color: transparent;
-    color: var(--white);
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-right: 1em;
-    padding: 0.5em;
-}
+/* Removed .menu-btn styles */
 
 .logo {
     font-size: 1.8em;
