@@ -8,20 +8,19 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="menu-logo">
-                <!-- Menu button and logo -->
-                <button>Menu</button>
-                <span>Onix</span>
+                <button class="menu-btn">☰</button>
+                <span class="logo">ONIX</span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <div class="cart-icon">
-                <!-- Cart icon -->
-                <a href="cart.html">🛒</a>
+                <a href="cart.html">🛒 Cart</a>
             </div>
         </nav>
     </header>
@@ -31,13 +30,23 @@
             <div class="cart-item-list">
                 <div class="cart-item">
                     <input type="checkbox" class="item-select">
-                    <span>Product Name</span>
+                    <span>Product Name 1</span>
                     <div class="quantity-controls">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        <button class="quantity-minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-plus">+</button>
                     </div>
-                    <div class="item-price">$XX.XX</div>
+                    <div class="item-price">$19.99</div>
+                </div>
+                <div class="cart-item">
+                    <input type="checkbox" class="item-select">
+                    <span>Product Name 2</span>
+                    <div class="quantity-controls">
+                        <button class="quantity-minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-price">$29.99</div>
                 </div>
                 <!-- More cart items can be added here -->
             </div>

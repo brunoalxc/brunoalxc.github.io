@@ -88,7 +88,7 @@ main {
     border: 1px dashed #ccc;
 }
 
-.featured-products, .product-list {
+.featured-products, .product-list, .cart-items {
     background-color: #fff;
     padding: 2em;
     margin-bottom: 2em;
@@ -140,6 +140,11 @@ main {
     border-bottom: none;
 }
 
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
 .quantity-controls button {
     background-color: #ddd;
     border: none;
@@ -147,7 +152,7 @@ main {
     cursor: pointer;
 }
 
-.quantity-controls span {
+.quantity-controls .quantity {
     margin: 0 0.5em;
 }
 
