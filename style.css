@@ -13,7 +13,7 @@ header {
     padding: 1em 0;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,13 +26,18 @@ nav {
     align-items: center;
 }
 
-.menu-logo button {
+.menu-btn {
     background-color: #555;
     color: #fff;
     border: none;
     padding: 0.5em 1em;
     cursor: pointer;
     margin-right: 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -54,7 +59,7 @@ nav {
 .cart-icon a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 main {
@@ -63,7 +68,7 @@ main {
     margin: 0 auto;
 }
 
-section {
+.hero-section {
     background-color: #fff;
     padding: 2em;
     margin-bottom: 2em;
@@ -71,15 +76,24 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.slider-placeholder {
+.image-slider {
     background-color: #eee;
-    height: 200px;
+    height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #666;
     font-size: 1.2em;
     border: 1px dashed #ccc;
+}
+
+.featured-products {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product-grid {
@@ -99,55 +113,11 @@ section {
     margin-top: 0;
 }
 
-.product-item .price {
-    font-weight: bold;
-    color: #e67e22;
-    margin-bottom: 1em;
-}
-
-.product-item .add-to-cart-btn {
-    background-color: #e74c3c;
+.product-item button {
+    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 0.8em 1.5em;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    padding: 1em 0;
-}
-
-.cart-item:last-child {
-    border-bottom: none;
-}
-
-.quantity-controls button {
-    background-color: #ddd;
-    border: none;
-    padding: 0.5em 0.8em;
-    cursor: pointer;
-}
-
-.quantity-controls span {
-    margin: 0 0.5em;
-}
-
-.item-price {
-    font-weight: bold;
-}
-
-.continue-payment-btn {
-    background-color: #2ecc71;
-    color: #fff;
-    border: none;
-    padding: 1em 2em;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
-    margin-top: 1em;
 }
